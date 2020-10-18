@@ -1,7 +1,7 @@
 <?php 
 class Config{
     function  koneksi(){
-        $conn=new mysqli('localhost','root','','db_puskesmas');
+        $conn=new mysqli('localhost','root','','data_tamu');
         if($conn->connect_error){
             $conn =die("Koneksi gagal : ". $conn->connect_error);
         }
