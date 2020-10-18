@@ -9,12 +9,12 @@ if(isset($_POST['email'])){
         $_SESSION['login']['email']=$sess['email'];
         $_SESSION['login']['id']=$sess['id'];
         $url="http://localhost/php";
-        header('Location: http://localhost/php/admin/index.php?mod=dokter');
+        header('Location: http://localhost/php/admin/index.php?mod=tamu');
     }else{
         $msg="Email dan Password tidak cocok";
-        include_once 'views/v_login.php';
+        include_once 'tamu.php';
         }
 }else{
-        include_once 'views/v_login.php';
+        include_once 'tamu.php';
 }
 ?>
