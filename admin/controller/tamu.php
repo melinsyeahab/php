@@ -41,7 +41,7 @@ switch (@$_GET['page']){
         include_once 'views/template.php';
     break;
     case 'delete';
-        $tamuk ="delete from tamu where md5(nik)='$_GET[id]'";
+        $tamu ="delete from tamu where md5(nik)='$_GET[id]'";
         $tamu=$conn->query($tamu);
         header('Location: http://localhost:8080/php/admin/?mode=tamu');
     break;
