@@ -12,9 +12,9 @@ if(isset($_POST['email'])){
         header('Location: http://localhost/php/admin/index.php?mod=tamu');
     }else{
         $msg="Email dan Password tidak cocok";
-        include_once 'tamu.php';
+        include_once 'views/v_login.php';
         }
 }else{
-        include_once 'tamu.php';
+        include_once 'views/v_login.php';
 }
 ?>
